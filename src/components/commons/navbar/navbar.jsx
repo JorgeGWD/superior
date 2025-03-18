@@ -1,5 +1,5 @@
 import './navbar.css'
-import LogoSuperior from '../../assets/images/logo-superior.svg'
+import LogoSuperior from '../../../assets/images/logo-superior.svg'
 
 const Navbar = () => {
     return (
