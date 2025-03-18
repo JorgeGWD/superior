@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #5D974A;
+    --secondary-color: #294523;
+    --tertiary-color: #FF5722;
+    --light-color: #FFFFFF;
+    --dark-color: #000000;
+    --gray: #E0E0E0;
+    --dark-gray: #9E9E9E;
+}
+
+@font-face {
+    font-family: 'Anteb-Regular';
+    src: url('./assets/fonts/Anteb-Regular.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anteb-SemiLight';
+    src: url('./assets/fonts/Anteb-SemiLight.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anteb-Thin';
+    src: url('./assets/fonts/Anteb-Thin.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Anteb-Regular', sans-serif;
+}

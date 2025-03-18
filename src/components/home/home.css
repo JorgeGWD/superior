@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    background-image: url('../../assets/images/planta-de-cemento.jpg');
+    background-size: cover;
+    background-position: center;
+    .home__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            width: 550px;
+            font-family: 'Anteb-Thin', sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 35px;
+        }
+    }   
+}
