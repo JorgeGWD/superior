@@ -1,0 +1,19 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    .title__content {
+        display: flex;
+        h1 {
+            width: 20%;
+            padding-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            border-bottom: 4px solid var(--primary-color);
+        }
+        .line {
+            width: 100%;
+            border-bottom: 4px solid var(--gray);
+        }
+    }
+}
