@@ -2,11 +2,15 @@ nav {
     position: fixed;
     display: flex;
     width: 100%;
-    padding: 20px 50px;
-    background-color: green;
+    padding: 10px 0px;
+    background-color: var(--secondary-color);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    img {
-        width: 150px;
-        height: auto;
+    .navbar__content {
+        margin: auto;
+        width: var(--desktop-width);
+        img {
+            width: 200px;
+            height: auto;
+        }
     }
 }
