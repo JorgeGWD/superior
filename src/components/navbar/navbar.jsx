@@ -4,7 +4,9 @@ import LogoSuperior from '../../assets/images/logo-superior.svg'
 const Navbar = () => {
     return (
         <nav>
-            <img src={LogoSuperior} alt="" />
+            <div className="navbar__content">
+                <img src={LogoSuperior} alt="Logo Superior" />
+            </div>
         </nav>
     )
 }
