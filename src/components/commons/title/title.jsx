@@ -3,7 +3,7 @@ import './title.css'
 const Title = ({ text }) => {
     return (
         <div className="title">
-            <div className="title__content">
+            <div className="title__content-line">
                 <h1>{text}</h1>
                 <div className="line"></div>
             </div>
