@@ -11,7 +11,7 @@ const Navbar = () => {
                     <a href="#services">Servicios</a>
                     <a href="#about">Sobre Nosotros</a>
                     <a href="#about">Nuestras Plantas</a>
-                    <Button text={'Contacto'} />
+                    <Button className={'button__primary'} text={'Contacto'} />
                 </div>
             </div>
         </nav>
