@@ -1,6 +1,5 @@
 button {
     background-color: transparent;
-    border: 2px solid var(--primary-color);
     border-radius: 5px;
     color: white;
     padding: 10px 20px;
@@ -11,8 +10,20 @@ button {
     display: inline-block;
     font-size: 1.1rem;
     cursor: pointer;
+    border: none;
     transition: 0.3s;
+}
+
+.button__primary {
+    border: 2px solid var(--primary-color);
     &:hover {
         background-color: var(--primary-color);
+    }
+}
+
+.button__secondary {
+    background-color: var(--primary-color);
+    &:hover {
+        background-color: var(--secondary-color);
     }
 }
