@@ -1,0 +1,8 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 0px;
+    width: var(--desktop-width);
+    margin: auto;
+}
