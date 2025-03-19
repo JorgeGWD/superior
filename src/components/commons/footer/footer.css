@@ -5,7 +5,42 @@ footer {
     background-color: var(--primary-color);
     border-top: 50px solid var(--secondary-color);
     .footer__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
         width: var(--desktop-width);
         margin: auto;
+        .logo-superior {
+            width: 20vw;
+            min-width: 300px;
+            height: auto;
+        }
+        .footer__content-socials {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer__content-locations {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .footer__content-location {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                line-height: 30px;
+            }
+        }
+        .footer__content-contac {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer__content-item {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            line-height: 30px;
+        }
     }
 }
