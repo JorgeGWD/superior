@@ -7,9 +7,6 @@ nav {
     padding: 10px 0px;
     animation: adjust-header 0.5s;
     animation-timeline: scroll();
-    animation-range: 100px;
-    background-color: rgba(41, 69, 35, 0);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
     .navbar__content {
         display: flex;
         justify-content: space-between;
@@ -40,7 +37,15 @@ nav {
 }
 
 @keyframes adjust-header {
-    to {
+    0% {
+        background-color: rgba(41, 69, 35, 0);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+    }
+    30% {
+        background-color: var(--secondary-color);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    100% {
         background-color: var(--secondary-color);
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     }
