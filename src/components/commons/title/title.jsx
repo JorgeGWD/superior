@@ -1,9 +1,9 @@
 import './title.css'
 
-const Title = ({ text }) => {
+const Title = ({ text, className }) => {
     return (
         <div className="title">
-            <div className="title__content-line">
+            <div className={className}>
                 <h1>{text}</h1>
                 <div className="line"></div>
             </div>
