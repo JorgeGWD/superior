@@ -5,6 +5,7 @@ import Services from './components/services/services'
 import Footer from './components/commons/footer/footer'
 import About from './components/about/about'
 import Projects from './components/projects/projects'
+import Slider from './components/slider/slider'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Services />
             <About />
             <Projects />
+            <Slider />
             <Footer />
         </>
     )
