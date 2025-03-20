@@ -2,7 +2,6 @@ button {
     background-color: transparent;
     border-radius: 5px;
     color: white;
-    padding: 10px 20px;
     font-family: 'Anteb-Regular', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -15,6 +14,7 @@ button {
 }
 
 .button__primary {
+    padding: 10px 20px;
     border: 2px solid var(--primary-color);
     &:hover {
         background-color: var(--primary-color);
@@ -22,6 +22,7 @@ button {
 }
 
 .button__secondary {
+    padding: 10px 20px;
     background-color: var(--primary-color);
     &:hover {
         background-color: var(--secondary-color);
