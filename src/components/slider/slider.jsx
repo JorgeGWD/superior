@@ -9,15 +9,18 @@ import './slider.css'
 const images = [
     {
         src: plantaDeCemento,
-        alt: "Planta de Concreto"
+        alt: "Planta de Concreto",
+        text : "Con capacidad de producción 60 metros cúbicos por hora."
     },
     {
         src: plantaDeLavado,
-        alt: "Planta de Lavado"
+        alt: "Planta de Lavado",
+        text : "Con capacidad de producción de 250 toneladas por hora. Materia prima principal para la producción de concreto."
     },
     {
         src: plantaDeTrituracionDeArena,
-        alt: "Planta de Trituracion de Arena"
+        alt: "Planta de Trituracion de Arena",
+        text : "Con capacidad de producción de 350 toneladas por hora para la producción de gravas 1”, grava y arena fina para producción de bloques y adoquines."
     }
 ]
 
@@ -42,6 +45,7 @@ const Slider = () => {
                 <div className="slide" style={{ backgroundImage: `url(${images[slide].src})` }}>
                     <div className="slide__content">
                         <Title text={images[slide].alt} className="title__content-uppercase" />
+                        <p>{images[slide].text}</p>
                     </div>
                 </div>
             <div className="slider__tab slider__tab-right" onClick={nextSlide} >
