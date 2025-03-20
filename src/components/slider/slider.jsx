@@ -36,13 +36,17 @@ const Slider = () => {
 
     return (
         <div className='slider'>
-            <img src={Arrow} alt="Arrow left" className='arrow arrow__left' onClick={prevSlide} />
+            <div className="slider__tab slider__tab-left" onClick={prevSlide}>
+                <img src={Arrow} alt="Arrow left" className='arrow arrow__left' />
+            </div>
                 <div className="slide" style={{ backgroundImage: `url(${images[slide].src})` }}>
                     <div className="slide__content">
                         <Title text={images[slide].alt} className="title__content-uppercase" />
                     </div>
                 </div>
-            <img src={Arrow} alt="Arror right" className='arrow arrow__right' onClick={nextSlide} />
+            <div className="slider__tab slider__tab-right" onClick={nextSlide} >
+                <img src={Arrow} alt="Arror right" className='arrow arrow__right' />
+            </div>
             <span className='slider__buttons'>
                 {images.map((_, idx) => {
                     return <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "slider__button" : "slider__button slider__button-inactive"}></button>

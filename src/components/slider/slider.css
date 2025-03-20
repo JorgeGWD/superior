@@ -21,20 +21,37 @@
             margin: auto;
         }
     }
-    .arrow {
+    .slider__tab {
         position: absolute;
-        width: 2rem;
-        height: auto;
+        bottom: 0;
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: .3;
+        transition: opacity 0.3s;
         &:hover {
+            opacity: 1;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
             cursor: pointer;
         }
+    }
+    .slider__tab-left {
+        left: 0;
+    }
+    .slider__tab-right {
+        right: 0;
+        transform: rotate(180deg);
+    }
+    .arrow {
+        width: 2rem;
+        height: auto;
     }
     .arrow__left {
         left: 1rem;
     }
     .arrow__right {
         right: 1rem;
-        transform: rotate(180deg);
     }
     .slider__buttons {
         display: flex;
