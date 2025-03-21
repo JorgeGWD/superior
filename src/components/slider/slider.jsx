@@ -38,7 +38,7 @@ const Slider = () => {
     console.log(images)
 
     return (
-        <div className='slider'>
+        <div className='slider' id="our-facilities">
             <div className="slider__tab slider__tab-left" onClick={prevSlide}>
                 <img src={Arrow} alt="Arrow left" className='arrow arrow__left' />
             </div>

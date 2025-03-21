@@ -10,7 +10,8 @@ const Navbar = () => {
                 <div className="navbar__content-menu">
                     <a href="#services">Servicios</a>
                     <a href="#about">Sobre Nosotros</a>
-                    <a href="#about">Nuestras Plantas</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#our-facilities">Nuestras Plantas</a>
                     <Button className={'button__primary'} text={'Contacto'} />
                 </div>
             </div>
