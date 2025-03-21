@@ -5,4 +5,10 @@
     padding: 100px 0px;
     margin: auto;
     width: var(--desktop-width);
+    .services__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 80px 50px;
+    }
 }
