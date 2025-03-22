@@ -1,10 +1,6 @@
 .services {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 100px 0px;
-    margin: auto;
-    width: var(--desktop-width);
     .services__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -10,8 +10,6 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: auto;
-        width: var(--desktop-width);
         padding: 10px 0px;
         animation: adjust-line 0.5s;
         animation-timeline: scroll();

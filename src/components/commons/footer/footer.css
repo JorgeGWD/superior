@@ -7,9 +7,6 @@ footer {
     .footer__content {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
-        width: var(--desktop-width);
-        margin: auto;
         .logo-superior {
             width: 20vw;
             min-width: 300px;

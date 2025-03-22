@@ -7,14 +7,14 @@ import Project3 from '../../assets/images/proyectos.jpg'
 
 const Projects = () => {
     return (
-        <div className='projects' id='projects'>
+        <section className='container projects' id='projects'>
             <Title className={'title__content-line'} text={'Nuestros Proyectos'} />
             <div className="projects__content">
                 <ImgFrame src={Project1} alt={'Equipos'} text={'Ver más'} />
                 <ImgFrame src={Project2} alt={'Plantas'} text={'Ver más'} />
                 <ImgFrame src={Project3} alt={'Proyectos'} text={'Ver más'} />
             </div>
-        </div>
+        </section>
     )
 }
 

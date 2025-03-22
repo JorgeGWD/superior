@@ -5,7 +5,7 @@ import Button from '../button/button'
 const Navbar = () => {
     return (
         <nav>
-            <div className="navbar__content">
+            <div className="container navbar__content">
                 <a href='#home'><img src={LogoSuperior} alt="Logo Superior" /></a>
                 <div className="navbar__content-menu">
                     <a href="#services">Servicios</a>

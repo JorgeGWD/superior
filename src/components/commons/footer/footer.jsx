@@ -11,7 +11,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <footer>
-            <div className="footer__content">
+            <div className="container footer__content">
                 <img src={LogoSuperior} alt="Logo Superior" className='logo-superior' />
                 <div className="footer__content-socials">
                     <h2>Siguenos:</h2>

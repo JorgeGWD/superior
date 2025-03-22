@@ -10,7 +10,7 @@ import Service6 from '../../assets/images/planta-de-trituracion-de-arena.jpg'
 
 const Services = () => {
     return (
-        <div className='services' id='services'>
+        <section className='container services' id='services'>
             <Title className={'title__content-line'} text={'¿Qué Hacemos?'} />
             <div className="services__content">
                 <ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más servicios'} />
@@ -20,7 +20,7 @@ const Services = () => {
                 <ImgFrame src={Service5} alt={'Certificado RCD'} text={'Ver más servicios'} />
                 <ImgFrame src={Service6} alt={'Alquiler de Maquinaria Amarilla'} text={'Ver más servicios'} />
             </div>
-        </div>
+        </section>
     )
 }
 

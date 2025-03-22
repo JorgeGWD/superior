@@ -43,7 +43,7 @@ const Slider = () => {
                 <img src={Arrow} alt="Arrow left" className='arrow arrow__left' />
             </div>
                 <div className="slide" style={{ backgroundImage: `url(${images[slide].src})` }}>
-                    <div className="slide__content">
+                    <div className="container slide__content">
                         <Title text={images[slide].alt} className="title__content-uppercase" />
                         <p>{images[slide].text}</p>
                     </div>

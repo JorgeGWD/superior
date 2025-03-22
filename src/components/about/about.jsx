@@ -4,8 +4,8 @@ import './about.css'
 
 const About = () => {
     return (
-        <div className='about' id='about'>
-            <div className="about__content">
+        <section className='about' id='about'>
+            <div className="container about__content">
                 <Title className={'title__content-uppercase'} text={'Nuestro Compromiso'} />
                 <div className="about__content-text">
                     <p>En Grupo Minero Superior nos comprometemos a ser una empresa líder en ofrecer soluciones integrales para la ejecución de grandes proyectos de ingeniería civil del sector industrial e inmobiliario.</p>
@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 <Button className={'button__secondary'} text={'Más Sobre Nosotros'} />
             </div>
-        </div>
+        </section>
     )
 }
 

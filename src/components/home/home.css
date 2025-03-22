@@ -12,9 +12,6 @@
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        gap: 40px;
-        margin: auto;
-        width: var(--desktop-width);
         h1 {
             font-size: 50px;
         }
