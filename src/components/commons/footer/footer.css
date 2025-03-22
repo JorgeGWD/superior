@@ -16,11 +16,26 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            svg {
+                width: 30px;
+                height: auto;
+            }
+            .social {
+                fill: var(--light-color);
+                transition: 0.3s;
+                &:hover {
+                    fill: var(--secondary-color);
+                }
+            }
         }
         .footer__content-locations {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            img {
+                width: 30px;
+                height: auto;
+            }
             .footer__content-location {
                 display: flex;
                 gap: 15px;
@@ -32,6 +47,10 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            img {
+                width: 25px;
+                height: auto;
+            }
         }
         .footer__content-item {
             display: flex;

@@ -40,6 +40,11 @@ body {
     font-family: 'Anteb-Regular', sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 button {
     display: inline-block;
     font-family: 'Anteb-Regular', sans-serif;
