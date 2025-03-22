@@ -6,6 +6,15 @@
     --dark-color: #000000;
     --gray: #E0E0E0;
     --dark-gray: #9E9E9E;
+
+    --primary-title: 3rem;
+    --secondary-title: 2.5rem;
+    --sub-title: 1.5rem;
+
+    --text-large: 1.5rem;
+    --text-medium: 1.2rem;
+    --text-small: 1rem;
+
     --desktop-width: 85%;
     --tablet-width: 90%;
     --movile-width: 95%;
@@ -38,6 +47,7 @@ html {
 
 body {
     font-family: 'Anteb-Regular', sans-serif;
+    font-size: var(--text-medium);
 }
 
 a {
@@ -48,7 +58,7 @@ a {
 button {
     display: inline-block;
     font-family: 'Anteb-Regular', sans-serif;
-    font-size: 1.1rem;
+    font-size: var(--text-medium);
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;

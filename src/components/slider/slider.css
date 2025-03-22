@@ -33,7 +33,7 @@
             p {
                 max-width: 550px;
                 font-family: 'Anteb-Thin', sans-serif;
-                font-size: 1.6rem;
+                font-size: var(--text-large);
                 font-weight: 800;
                 line-height: 35px;
                 color: var(--light-color);

@@ -4,6 +4,9 @@ footer {
     color: var(--light-color);
     background-color: var(--primary-color);
     border-top: 50px solid var(--secondary-color);
+    h3 {
+        font-size: var(--sub-title);
+    }
     .footer__content {
         display: flex;
         justify-content: space-between;

@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="container footer__content">
                 <img src={LogoSuperior} alt="Logo Superior" className='logo-superior' />
                 <div className="footer__content-socials">
-                    <h2>Siguenos:</h2>
+                    <h3>Siguenos:</h3>
                     <a href="https://www.linkedin.com/" target="_blank">
                         <svg className='social' viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_33_177)">
@@ -43,24 +43,24 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="footer__content-locations">
-                    <h2>Localización:</h2>
+                    <h3>Localización:</h3>
                     <div className="footer__content-item">
                         <img src={Pin} alt="Pin" />
                         <div className="footer__content-location-office">
-                            <h3>Oficinas administrativas:</h3>
+                            <h4>Oficinas administrativas:</h4>
                             <p>Calle 110 43-448 AV Circunvalar Barranquilla.</p>
                         </div>
                     </div>
                     <div className="footer__content-item">
                         <img src={Pin} alt="Pin" />
                         <div className="footer__content-location-floor">
-                            <h3>Plantas:</h3>
+                            <h4>Plantas:</h4>
                             <p>Kilometro 7 vía Puerto Colombia-Atlántico.</p>
                         </div>
                     </div>
                 </div>
                 <div className="footer__content-contac">
-                    <h2>Contactos:</h2>
+                    <h3>Contactos:</h3>
                     <div className="footer__content-item">
                         <img src={Email} alt="Email" />
                         <a href="mailto:info@grupominerosuperior.com">info@grupominerosuperior.com</a>
