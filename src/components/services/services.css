@@ -8,3 +8,30 @@
         gap: 80px 50px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .services {
+        .services__content {
+            gap: 30px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        .services__content {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .services {
+        .services__content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px 20px;
+        }
+    }
+}

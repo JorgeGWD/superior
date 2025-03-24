@@ -92,3 +92,37 @@
         background-color: var(--light-color);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        height: 600px;
+        .slide {
+            .container {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        .slider__tab {
+            width: 50px;
+        }
+        .slide {
+            .container {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .slider {
+        .slide {
+            .container {
+                width: 70%;
+            }
+        }
+    }
+}

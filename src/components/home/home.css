@@ -16,7 +16,7 @@
             font-size: var(--primary-title);
         }
         p {
-            width: 550px;
+            max-width: 550px;
             font-family: 'Anteb-Thin', sans-serif;
             font-size: var(--text-large);
             font-weight: 800;

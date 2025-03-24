@@ -32,3 +32,23 @@
         background: linear-gradient(to right, rgba(41, 69, 35, 1) 45%, rgba(41, 69, 35, 0));
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .about {
+        .about__content {
+            .about__content-text {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        .about__content {
+            .about__content-text {
+                width: 100%;
+            }
+        }
+    }
+}
