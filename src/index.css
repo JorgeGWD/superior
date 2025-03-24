@@ -7,16 +7,16 @@
     --gray: #E0E0E0;
     --dark-gray: #9E9E9E;
 
-    --primary-title: 3rem;
-    --secondary-title: 2.5rem;
-    --sub-title: 1.5rem;
+    --primary-title: clamp(2rem, 5vw, 3rem);
+    --secondary-title: clamp(1.5rem, 5vw, 2.5rem);
+    --sub-title: clamp(1.3rem, 2.1vw, 1.5rem);
 
-    --text-large: 1.5rem;
-    --text-medium: 1.2rem;
-    --text-small: 1rem;
+    --text-large: clamp(1.3rem, 3vw, 1.6rem);
+    --text-medium: clamp(1.1rem, 3vw, 1.3rem);
+    --text-small: clamp(0.9rem, 3vw, 1.1rem);
 
-    --desktop-width: 85%;
-    --tablet-width: 90%;
+    --desktop-width: min(85%, 95%);
+    --tablet-width: min(90%, 100%);
     --movile-width: 95%;
 }
 
@@ -77,4 +77,11 @@ section {
     gap: 40px;
     width: var(--desktop-width);
     margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        gap: 20px;
+        width: var(--tablet-width);
+    }
 }
