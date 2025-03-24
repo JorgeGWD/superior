@@ -11,6 +11,7 @@ const Footer = () => {
                 <img src={LogoSuperior} alt="Logo Superior" className='logo-superior' />
                 <div className="footer__content-socials">
                     <h3>Siguenos:</h3>
+                    <div className="footer__content-item">
                     <a href="https://www.linkedin.com/" target="_blank">
                         <svg className='social' viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_33_177)">
@@ -41,6 +42,7 @@ const Footer = () => {
                         </g>
                         </svg>
                     </a>
+                    </div>
                 </div>
                 <div className="footer__content-locations">
                     <h3>Localización:</h3>
