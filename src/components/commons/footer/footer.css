@@ -10,6 +10,7 @@ footer {
     .footer__content {
         display: grid;
         grid-template-columns: repeat(4, auto);
+        gap: 40px;
         .logo-superior {
             display: flex;
             align-self: center;
@@ -71,12 +72,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1400px) {
     footer {
         .footer__content {
             grid-template-columns: repeat(2, auto);
             .footer__content-socials {
                 flex-direction: column;
+                align-self: center;
             }
             .footer__content-item {
                 width: fit-content;
@@ -88,11 +90,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     footer {
         .footer__content {
             grid-template-columns: repeat(1, auto);
-            gap: 40px;
         }
     }
 }

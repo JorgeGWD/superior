@@ -15,7 +15,7 @@
     --text-medium: clamp(1.1rem, 3vw, 1.3rem);
     --text-small: clamp(0.9rem, 3vw, 1.1rem);
 
-    --desktop-width: min(85%, 95%);
+    --desktop-width: min(85%, 90%);
     --tablet-width: min(90%, 100%);
     --movile-width: 95%;
 }
@@ -79,7 +79,7 @@ section {
     margin: auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
     .container {
         gap: 20px;
         width: var(--tablet-width);
