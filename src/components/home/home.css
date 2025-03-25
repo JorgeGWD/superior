@@ -4,9 +4,17 @@
     justify-content: center;
     height: 100vh;
     color: white;
-    background-image: url('../../assets/images/planta-de-cemento.jpg');
     background-size: cover;
     background-position: center;
+    .home__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
     .home__content {
         z-index: 10;
         display: flex;
@@ -16,7 +24,7 @@
             font-size: var(--primary-title);
         }
         p {
-            max-width: 550px;
+            max-width: 600px;
             font-family: 'Anteb-Thin', sans-serif;
             font-size: var(--text-large);
             font-weight: 800;
@@ -31,6 +39,16 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(41, 69, 35, 0.6);
+        background-color: rgba(41, 69, 35, 0.5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        .home__content {
+            p {
+                line-height: 30px;
+            }
+        }
     }
 }
