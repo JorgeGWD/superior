@@ -13,7 +13,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, rgba(41, 69, 35, 0.6), 65%, rgba(91, 151, 74, 0.6));
+        background: linear-gradient(to right, rgba(41, 69, 35, 0.3), 65%, rgba(91, 151, 74, 0.3));
     }
     .slide {
         display: flex;

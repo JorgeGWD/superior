@@ -35,8 +35,6 @@ const Slider = () => {
         setSlide((prev) => (prev - 1 + images.length) % images.length);
     }
 
-    console.log(images)
-
     return (
         <div className='slider' id="our-facilities">
             <div className="slider__tab slider__tab-left" onClick={prevSlide}>
