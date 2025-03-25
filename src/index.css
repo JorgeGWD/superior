@@ -7,13 +7,14 @@
     --gray: #E0E0E0;
     --dark-gray: #9E9E9E;
 
-    --primary-title: clamp(2rem, 5vw, 3rem);
+    --primary-title: clamp(2.3rem, 7vw, 3.8rem);
     --secondary-title: clamp(1.5rem, 5vw, 2.5rem);
     --sub-title: clamp(1.3rem, 2.1vw, 1.5rem);
 
     --text-large: clamp(1.3rem, 3vw, 1.6rem);
     --text-medium: clamp(1.1rem, 3vw, 1.3rem);
     --text-small: clamp(0.9rem, 3vw, 1.1rem);
+    --text-xsmall: clamp(0.7rem, 3vw, 0.9rem);
 
     --desktop-width: min(85%, 90%);
     --tablet-width: min(90%, 100%);
@@ -48,17 +49,21 @@ html {
 body {
     font-family: 'Anteb-Regular', sans-serif;
     font-size: var(--text-medium);
+    letter-spacing: 1px;
 }
 
 a {
     color: white;
     text-decoration: none;
+    &:has(svg) {
+        line-height: 0px;
+    }
 }
 
 button {
     display: inline-block;
     font-family: 'Anteb-Regular', sans-serif;
-    font-size: var(--text-medium);
+    font-size: var(--text-small);
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
