@@ -4,7 +4,7 @@ nav {
     top: 0px;
     display: flex;
     width: 100%;
-    font-size: var(--text-medium);
+    font-size: var(--text-xsmall);
     animation: adjust-header 0.5s;
     animation-timeline: scroll();
     .navbar__content {
@@ -21,7 +21,7 @@ nav {
         .navbar__content-menu {
             display: flex;
             align-items: anchor-center;
-            gap: 40px;
+            gap: 60px;
             text-transform: uppercase;
             a {
                 font-weight: 500;
