@@ -61,7 +61,6 @@ footer {
         .footer__content-item {
             display: flex;
             gap: 15px;
-            width: max-content;
             &:has(svg) {
                 flex-direction: column;
             }

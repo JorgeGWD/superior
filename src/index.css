@@ -16,9 +16,9 @@
     --text-small: clamp(0.9rem, 3vw, 1.1rem);
     --text-xsmall: clamp(0.7rem, 3vw, 0.9rem);
 
-    --desktop-width: min(85%, 90%);
-    --tablet-width: min(90%, 100%);
-    --movile-width: 95%;
+    --desktop-width: 85%;
+    --tablet-width: 95%;
+    --movile-width: 90%;
 }
 
 @font-face {
