@@ -12,7 +12,7 @@ const About = () => {
                     <p>Nuestro objetivo es satisfacer las necesidades de nuestros clientes convirtiéndonos en un aliado estratégico en la primera fase de los proyectos en mejoramiento de suelos, extensión y compactación de material granular, alquiler de equipos y el desarrollo de grandes plataformas.</p>
                     <p>Contamos con plantas industriales para la producción de gravas, arenas finas y concreto contribuyendo al desarrollo de la región y generando valor para los accionistas y colaboradores.</p>
                 </div>
-                <Button className={'button__secondary'} text={'Más Sobre Nosotros'} />
+                <Button className={'button__secondary'} text={'Pide una cotización'} />
             </div>
         </section>
     )
