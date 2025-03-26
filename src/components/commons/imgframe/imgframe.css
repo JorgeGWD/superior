@@ -54,7 +54,7 @@
         border-radius: 5px 5px 0 0;
     }
     h3 {
-        font-size: var(--sub-title);
+        font-size: var(--text-medium);
         color: var(--light-color);
         text-align: center;
         background-color: var(--primary-color);
