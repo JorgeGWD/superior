@@ -32,7 +32,6 @@ nav {
             text-transform: uppercase;
             a {
                 display: flex;
-                font-weight: 500;
                 transition: 0.3s;
                 &:hover {
                     color: var(--primary-color);
