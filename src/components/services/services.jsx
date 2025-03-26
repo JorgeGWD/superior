@@ -13,12 +13,12 @@ const Services = () => {
         <section className='container services' id='services'>
             <Title className={'title__content-line'} text={'¿Qué Hacemos?'} />
             <div className="services__content">
-                <ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más servicios'} />
-                <ImgFrame src={Service2} alt={'Agregados'} text={'Ver más servicios'} />
-                <ImgFrame src={Service3} alt={'Concretos'} text={'Ver más servicios'} />
-                <ImgFrame src={Service4} alt={'Excavaciones profundas'} text={'Ver más servicios'} />
-                <ImgFrame src={Service5} alt={'Certificado RCD'} text={'Ver más servicios'} />
-                <ImgFrame src={Service6} alt={'Alquiler de Maquinaria Amarilla'} text={'Ver más servicios'} />
+                <ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más'} />
+                <ImgFrame src={Service2} alt={'Agregados'} text={'Ver más'} />
+                <ImgFrame src={Service3} alt={'Concretos'} text={'Ver más'} />
+                <ImgFrame src={Service4} alt={'Excavaciones profundas'} text={'Ver más'} />
+                <ImgFrame src={Service5} alt={'Certificado RCD'} text={'Ver más'} />
+                <ImgFrame src={Service6} alt={'Alquiler de Maquinaria Amarilla'} text={'Ver más'} />
             </div>
         </section>
     )
