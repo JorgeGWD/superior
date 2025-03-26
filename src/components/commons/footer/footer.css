@@ -10,7 +10,6 @@ footer {
     .footer__content {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        gap: 40px;
         .logo-superior {
             display: flex;
             align-self: center;
