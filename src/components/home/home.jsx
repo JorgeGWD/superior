@@ -15,6 +15,9 @@ const Home = () => {
                 <h1>Grupo Minero Superior</h1>
                 <p>Ofrecemos soluciones integrales para la ejecución de grandes proyectos de ingeniería civil del sector industrial e inmobiliario.</p>
                 <Button className={'button__secondary'} text={'Contáctanos'} />
+                <div className="home__content-bottom">
+                    <h2>TU ALIADO ESTRATÉGICO</h2>
+                </div>
             </div>
         </section>
     )
