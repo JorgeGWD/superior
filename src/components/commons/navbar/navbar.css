@@ -24,8 +24,7 @@ nav {
         .navbar__content-checkbtn img {
             position: absolute;
             right: 20px;
-            display: flex;
-            align-self: anchor-center;
+            display: none;
             width: 30px;
             opacity: 0;
             transition: 0.5s;
@@ -94,6 +93,8 @@ nav {
         font-size: var(--text-medium);
         .navbar__content {
             .navbar__content-checkbtn img {
+                display: flex;
+                align-self: anchor-center;
                 opacity: 1;
             }
             img.close-menu {
