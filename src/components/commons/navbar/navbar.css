@@ -12,7 +12,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
-        animation: adjust-line 0.5s;
+        animation: adjust-line 0.3s;
         animation-timeline: scroll();
         img {
             width: 200px;
@@ -22,7 +22,13 @@ nav {
             display: none;
         }
         .navbar__content-checkbtn img {
-            display: none;
+            position: absolute;
+            right: 20px;
+            display: flex;
+            align-self: anchor-center;
+            width: 30px;
+            opacity: 0;
+            transition: 0.5s;
         }
         .navbar__content-menu {
             position: relative;
@@ -88,11 +94,10 @@ nav {
         font-size: var(--text-medium);
         .navbar__content {
             .navbar__content-checkbtn img {
-                display: block;
-                width: 30px;
+                opacity: 1;
             }
             img.close-menu {
-                display: none;
+                opacity: 0;
             }
             .navbar__content-menu {
                 z-index: 0;
@@ -125,17 +130,19 @@ input#check:checked ~ .navbar__content-menu {
     padding: 20px;
     height: 440px;
     img.close-menu {
-        display: block;
+        opacity: 1;
     }
     img.open-menu {
-        display: none;
+        opacity: 0;
     }
 }
 
 input#check:checked ~ .navbar__content-checkbtn img.open-menu {
-    display: none;
+    opacity: 0;
+    transform: rotate(180deg);
 }
 
 input#check:checked ~ .navbar__content-checkbtn img.close-menu {
-    display: block;
+    opacity: 1;
+    transform: rotate(180deg);
 }
