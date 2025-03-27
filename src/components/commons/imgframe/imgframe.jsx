@@ -5,7 +5,7 @@ const ImgFrame = ({ src, alt, text }) => {
         <div className="img-frame">
             <div className="img-frame__content">
                 <img src={src} alt={alt} />
-                <h3>{text}</h3>
+                <p>{text}</p>
             </div>
             <h3>{alt}</h3>
         </div>
