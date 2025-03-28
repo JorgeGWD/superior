@@ -1,0 +1,13 @@
+.contact {
+    .contact__header {
+        padding: 200px 0px;
+        background-color: var(--primary-color);
+    }
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        margin: auto;
+    }
+}
