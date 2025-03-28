@@ -3,6 +3,7 @@ import LogoSuperior from '../../../assets/images/logo-superior.svg'
 import IconMenu from '../../../assets/images/icon-menu.svg'
 import IconClose from '../../../assets/images/icon-close.svg'
 import Button from '../button/button'
+import { BrowserRouter, Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -19,7 +20,7 @@ const Navbar = () => {
                     <a href="#about">Sobre Nosotros</a>
                     <a href="#projects">Proyectos</a>
                     <a href="#our-facilities">Nuestras Plantas</a>
-                    <Button className={'button__primary'} text={'Contacto'} />
+                    <Link to={'/contact'}><Button className={'button__primary'} text={'Contacto'} /></Link>
                 </div>
             </div>
         </nav>
