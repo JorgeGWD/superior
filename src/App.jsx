@@ -13,7 +13,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route index path='/' element={<Home />} />
-                    <Route path='contact' element={<Contact />} />
+                    <Route path='contacto' element={<Contact />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
