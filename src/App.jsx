@@ -1,23 +1,22 @@
 import './App.css'
 import Home from './components/home/home'
 import Navbar from './components/commons/navbar/navbar'
-import Services from './components/services/services'
 import Footer from './components/commons/footer/footer'
-import About from './components/about/about'
-import Projects from './components/projects/projects'
-import Slider from './components/slider/slider'
+import Contact from './components/contact/contact'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
         <>
-            <Navbar />
-            <Home />
-            <Services />
-            <About />
-            <Projects />
-            <Slider />
-            <Footer />
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route index path='/' element={<Home />} />
+                    <Route path='contact' element={<Contact />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
         </>
     )
 }

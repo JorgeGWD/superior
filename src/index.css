@@ -60,8 +60,22 @@ a {
     }
 }
 
+label, input, textarea {
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    letter-spacing: normal;
+    padding: 5px 4px;
+}
+
+textarea {
+    height: 160px;
+    resize: none;
+}
+
 button {
     display: inline-block;
+    align-self: baseline;
     font-family: 'Anteb-Regular', sans-serif;
     font-size: var(--text-small);
     text-transform: uppercase;
