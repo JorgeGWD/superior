@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     color: var(--light-color);
-    background-image: url('../../assets/images/planta-de-trituracion.jpg');
     background-size: cover;
     background-position: center;
     .home-about__content {
