@@ -1,12 +1,15 @@
 import Button from '../commons/button/button';
 import Title from '../commons/title/title';
+import BackgroundIMG from '../../assets/images/planta-de-trituracion-de-arena.jpg'
 import './contact.css'
 
 const Contact = () => {
     return (
         <div className='contact'>
-            <div className="contact__header">
-                <Title text={'Contáctanos'} className={'container title__primary'} />
+            <div className="header contact__header" style={{ backgroundImage: `url(${BackgroundIMG})` }}>
+                <div className="container contact__header-content">
+                    <Title text={'Contáctanos'} className={'title__primary'} />
+                </div>
             </div>
             <section className='container'>
                 <form className='contact__content'>
