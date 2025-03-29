@@ -1,0 +1,6 @@
+.not-found  {
+    .not-found__content {
+        display: flex;
+        justify-content: center;
+    }
+}
