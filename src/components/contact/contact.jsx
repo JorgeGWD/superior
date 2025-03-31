@@ -5,7 +5,7 @@ import './contact.css'
 
 const Contact = () => {
     return (
-        <SectionTemplate className='contact'  text='Contactanos' BackgroundIMG={BackgroundIMG}>
+        <SectionTemplate className='contact' text='Contactanos' BackgroundIMG={BackgroundIMG}>
             <form className='contact__content-form'>
                 <div>
                     <label htmlFor="name">Nombre:</label>
