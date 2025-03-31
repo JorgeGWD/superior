@@ -42,6 +42,29 @@ nav {
                     color: var(--primary-color);
                 }
             }
+            .navbar__content-menu-dropdown {
+                position: relative;
+                display: inline-block;
+                .navbar__content-menu-dropdown-content {
+                    z-index: 1;
+                    display: none;
+                    position: absolute;
+                    width: max-content;
+                    background-color: #f9f9f9;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    a {
+                        color: black;
+                        padding: 20px;
+                        &:hover {
+                            color: var(--light-color);
+                            background-color: var(--primary-color);
+                        }
+                    }
+                }
+                &:hover .navbar__content-menu-dropdown-content {
+                    display: block;
+                }
+            }
         }
     }
 }
