@@ -53,6 +53,7 @@ nav {
                     background-color: #f9f9f9;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     a {
+                        justify-content: start;
                         color: black;
                         padding: 20px;
                         &:hover {
@@ -62,7 +63,8 @@ nav {
                     }
                 }
                 &:hover .navbar__content-menu-dropdown-content {
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
@@ -145,6 +147,15 @@ nav {
                     &:hover {
                         color: var(--secondary-color);
                         background-color: var(--primary-color);
+                    }
+                    &:last-child {
+                        padding: 0px;
+                    }
+                }
+                .navbar__content-menu-dropdown {
+                    width: 100%;
+                    .navbar__content-menu-dropdown-content {
+                        top: 0px;
                     }
                 }
                 button {
