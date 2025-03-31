@@ -10,7 +10,7 @@ import './home-services.css'
 
 const HomeServices = () => {
     return (
-        <section className='container home-services' id='home-services'>
+        <section className='container home-services' id='inicio-servicios'>
             <Title className={'title__content-line'} text={'¿Qué Hacemos?'} />
             <div className="home-services__content">
                 <ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más'} />

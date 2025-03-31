@@ -36,7 +36,7 @@ const Slider = () => {
     }
 
     return (
-        <div className='slider' id="our-facilities">
+        <div className='slider' id="inicio-nuestras-plantas">
             <div className="slider__tab slider__tab-left" onClick={prevSlide}>
                 <img src={Arrow} alt="Arrow left" className='arrow arrow__left' />
             </div>

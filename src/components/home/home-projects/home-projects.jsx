@@ -7,7 +7,7 @@ import './home-projects.css'
 
 const HomeProjects = () => {
     return (
-        <section className='container home-projects' id='home-projects'>
+        <section className='container home-projects' id='inicio-proyectos'>
             <Title className={'title__content-line'} text={'Nuestros Proyectos'} />
             <div className="home-projects__content">
                 <ImgFrame src={Project1} alt={'Equipos'} text={'Ver más'} />

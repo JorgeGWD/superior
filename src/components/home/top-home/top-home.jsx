@@ -7,7 +7,7 @@ import './top-home.css'
 
 const TopHome = () => {
     return (
-        <section className='home' id='home'>
+        <section className='home' id='inicio'>
             <video className='home__video' poster={Poster} autoPlay loop muted>
                 <source src={Video} type='video/mp4' />
                 Tu navegador no soporta la etiqueta de video.

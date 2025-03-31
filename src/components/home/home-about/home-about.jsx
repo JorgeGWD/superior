@@ -5,7 +5,7 @@ import './home-about.css'
 
 const HomeAbout = () => {
     return (
-        <section className='home-about' id='home-about' style={{ backgroundImage: `url(${BackgroungIMG})` }}>
+        <section className='home-about' id='inicio-sobre-nosotros' style={{ backgroundImage: `url(${BackgroungIMG})` }}>
             <div className="container home-about__content">
                 <Title className={'title__content-uppercase'} text={'Nuestro Compromiso'} />
                 <div className="home-about__content-text">
