@@ -4,6 +4,7 @@
     font-family: 'Anteb-Regular', sans-serif;
     font-weight: 800;
     .title__primary {
+        z-index: 10;
         color: var(--light-color);
         font-weight: 800;
         h1 {
