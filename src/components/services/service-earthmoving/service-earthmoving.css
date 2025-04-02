@@ -1,0 +1,24 @@
+.service-earthmoving {
+    .service-earthmoving__content {
+        gap: 8vw;
+        img {
+            width: 45%;
+            height: auto;
+            aspect-ratio: 10 / 8;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-earthmoving {
+        .service-earthmoving__content {
+            flex-direction: column;
+            img {
+                width: 100%;
+                aspect-ratio: 16 / 8;
+            }
+        }
+    }
+}
