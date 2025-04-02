@@ -1,0 +1,32 @@
+.image-ribbon {
+    gap: 10px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 11;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image-ribbon {
+        gap: 5px;
+        img {
+            aspect-ratio: 11 / 13;
+        }
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .image-ribbon {
+        grid-template-columns: none !important;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+        img {
+            aspect-ratio: 16 / 11;
+        }
+    }    
+}
