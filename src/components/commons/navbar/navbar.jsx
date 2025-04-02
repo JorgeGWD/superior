@@ -24,7 +24,7 @@ const Navbar = () => {
                         <div className="navbar__content-menu-dropdown-content">
                             <a href="/servicios/movimiento-de-tierra">Movimiento de tierra</a>
                             <a href="/servicios/agregados">Agregados</a>
-                            <a href="/servicios/Concretos">Concretos</a>
+                            <a href="/servicios/concretos">Concretos</a>
                             <a href="/servicios/excavaciones-profundas">Excavaciones profundas</a>
                             <a href="/servicios/certificado-rcd">Certificado RCD</a>
                             <a href="/servicios/alquiler-de-maquinaria-amarilla">Alquiler de maquinaria  amarilla</a>
