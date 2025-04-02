@@ -1,6 +1,6 @@
 import ImgFrame from '../../commons/imgframe/imgframe'
 import Title from '../../commons/title/title'
-import Service1 from '../../../assets/images/movimiento-de-tierra.jpg'
+import Service1 from '../../../assets/images/servicio-movimiento-de-tierra-header.jpg'
 import Service2 from '../../../assets/images/trituracion.jpg'
 import Service3 from '../../../assets/images/planta-de- concreto.jpg'
 import Service4 from '../../../assets/images/excavaciones-profundas.jpg'
