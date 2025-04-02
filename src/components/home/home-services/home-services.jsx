@@ -7,18 +7,19 @@ import Service4 from '../../../assets/images/excavaciones-profundas.jpg'
 import Service5 from '../../../assets/images/certificado-rcd.jpg'
 import Service6 from '../../../assets/images/planta-de-trituracion-de-arena.jpg'
 import './home-services.css'
+import { Link } from 'react-router'
 
 const HomeServices = () => {
     return (
         <section className='container home-services' id='inicio-servicios'>
             <Title className={'title__content-line'} text={'¿Qué Hacemos?'} />
             <div className="home-services__content">
-                <ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más'} />
-                <ImgFrame src={Service2} alt={'Agregados'} text={'Ver más'} />
-                <ImgFrame src={Service3} alt={'Concretos'} text={'Ver más'} />
-                <ImgFrame src={Service4} alt={'Excavaciones profundas'} text={'Ver más'} />
-                <ImgFrame src={Service5} alt={'Certificado RCD'} text={'Ver más'} />
-                <ImgFrame src={Service6} alt={'Alquiler de Maquinaria Amarilla'} text={'Ver más'} />
+                <Link to={'/servicios/movimiento-de-tierra'}><ImgFrame src={Service1} alt={'Movimiento de tierra'} text={'Ver más'} /></Link>
+                <Link to={'/servicios/agregados'}><ImgFrame src={Service2} alt={'Agregados'} text={'Ver más'} /></Link>
+                <Link to={'/servicios/concretos'}><ImgFrame src={Service3} alt={'Concretos'} text={'Ver más'} /></Link>
+                <Link to={'/servicios/excavaciones-profundas'}><ImgFrame src={Service4} alt={'Excavaciones profundas'} text={'Ver más'} /></Link>
+                <Link to={'/servicios/certificado-rcd'}><ImgFrame src={Service5} alt={'Certificado RCD'} text={'Ver más'} /></Link>
+                <Link to={'/servicios/alquiler-de-maquinaria-amarilla'}><ImgFrame src={Service6} alt={'Alquiler de Maquinaria Amarilla'} text={'Ver más'} /></Link>
             </div>
         </section>
     )
