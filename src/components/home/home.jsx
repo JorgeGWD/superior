@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <TopHome />
-            <HomeServices />
+            <HomeServices text='¿Qué Hacemos?' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
             <HomeAbout />
             <HomeProjects />
             <Slider />
