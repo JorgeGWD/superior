@@ -20,7 +20,10 @@ const Navbar = () => {
                 </label>
                 <div className="navbar__content-menu">
                     <div className="navbar__content-menu-dropdown">
-                        <a href={isHomePage ? "#inicio-servicios" : ""}>Servicios</a>
+                        <div className="navbar__content-menu-dropdown-item">
+                            <a href={isHomePage ? "#inicio-servicios" : ""}>Servicios</a>
+                            <svg viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 2L3.5 17L18.5 32" stroke-width="4" stroke-linecap="round"/></svg>
+                        </div>
                         <div className="navbar__content-menu-dropdown-content">
                             <a href="/servicios/movimiento-de-tierra">Movimiento de tierra</a>
                             <a href="/servicios/agregados">Agregados</a>
