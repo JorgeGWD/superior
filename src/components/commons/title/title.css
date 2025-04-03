@@ -36,4 +36,13 @@
             display: none;
         }
     }
+    .title__section-content {
+        h1 {
+            color: var(--secondary-color);
+            font-size: var(--secondary-title);
+        }
+        .line {
+            display: none;
+        }
+    }
 }

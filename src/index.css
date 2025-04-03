@@ -73,6 +73,10 @@ textarea {
     resize: none;
 }
 
+ul {
+    margin-left: 20px;
+}
+
 button {
     display: inline-block;
     align-self: baseline;

@@ -9,7 +9,7 @@ const SectionTemplate = ({ className, text, children, BackgroundIMG }) => {
                     <Title text={text} className='title__primary' />
                 </div>
             </div>
-            <section className={`container ${className}__content`}>
+            <section className={`container section-template ${className}__content`}>
                 {children}
             </section>
         </div>

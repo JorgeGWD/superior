@@ -33,28 +33,48 @@ nav {
             position: relative;
             display: flex;
             align-items: anchor-center;
-            gap: 60px;
+            gap: 40px;
             text-transform: uppercase;
             a {
                 display: flex;
+                padding: 10px;
                 transition: 0.3s;
                 &:hover {
                     color: var(--primary-color);
+                    background-color: hsl(0, 0%, 98%, .95);
+                    &:first-child, &:last-child {
+                        background-color: transparent;
+                    }
+                }
+                &:first-child, &:last-child {
+                    padding: 0px;
                 }
             }
             .navbar__content-menu-dropdown {
                 position: relative;
                 display: inline-block;
+                cursor: pointer;
+                &:hover {
+                    background-color: hsl(0, 0%, 98%, .95);
+                    a {
+                        color: var(--primary-color);
+                    }
+                    svg {
+                        stroke: var(--primary-color);
+                        transform: rotate(90deg);
+                    }
+                }
                 .navbar__content-menu-dropdown-content {
                     z-index: 1;
                     display: none;
                     position: absolute;
+                    top: 37px;
+                    left: 0px;
                     width: max-content;
                     background-color: hsl(0, 0%, 98%, .95);
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     a {
                         justify-content: start;
-                        color: black;
                         padding: 20px;
                         &:hover {
                             display: flex;
@@ -64,9 +84,20 @@ nav {
                         }
                     }
                 }
+                .navbar__content-menu-dropdown-item {
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px;
+                }
                 &:hover .navbar__content-menu-dropdown-content {
                     display: flex;
                     flex-direction: column;
+                }
+                svg {
+                    width: 10px;
+                    stroke: var(--light-color);
+                    transition: 0.3s;
+                    transform: rotate(270deg);
                 }
             }
         }
@@ -104,11 +135,15 @@ nav {
     nav {
         width: 100%;
         .navbar__content {
+            width: 95%;
             img {
                 width: 150px;
             }
             .navbar__content-menu {
                 gap: 20px;
+                .navbar__content-menu-dropdown {
+                    padding: 20px 0px;
+                }
             }
         }
     }
@@ -150,14 +185,18 @@ nav {
                         color: var(--secondary-color);
                         background-color: var(--primary-color);
                     }
+                    &:first-child {
+                        width: auto;
+                    }
                     &:last-child {
                         padding: 0px;
                     }
                 }
                 .navbar__content-menu-dropdown {
+                    justify-content: center;
                     width: 100%;
                     .navbar__content-menu-dropdown-content {
-                        top: 0px;
+                        top: 44px;
                     }
                 }
                 button {
