@@ -34,7 +34,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <a href={isHomePage ? "#inicio-sobre-nosotros" : "/sobre-nosotros"}>Sobre Nosotros</a>
-                    <a href={isHomePage ? "#inicio-proyectos" : "/proyectos"}>Proyectos</a>
+                    {/*<a href={isHomePage ? "#inicio-proyectos" : "/proyectos"}>Proyectos</a>*/}
                     <a href={isHomePage ? "#inicio-nuestras-plantas" : "/nuestras-plantas"}>Nuestras Plantas</a>
                     <Link to={'/contacto'}><Button className={'button__primary'} text={'Contacto'} /></Link>
                 </div>
