@@ -5,6 +5,7 @@ import ImageGallery1 from '../../../assets/images/servicio-agregados-gallery-1.j
 import ImageGallery2 from '../../../assets/images/servicio-agregados-gallery-2.jpg'
 import ImageGallery3 from '../../../assets/images/servicio-agregados-gallery-3.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
+import HomeServices from '../../home/home-services/home-services'
 import './service-added.css'
 
 const ServiceAdded = () => {
@@ -24,10 +25,7 @@ const ServiceAdded = () => {
                 <img src={AddedIMG} alt="Agregados" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <br />
-            <br />
-            <br />
-            <br />
+            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

@@ -1,4 +1,5 @@
 import SectionTemplate from '../../commons/section-template/section-template'
+import HomeServices from '../../home/home-services/home-services'
 import './service-certified-rcd.css'
 
 const ServiceCertifiedRcd = () => {
@@ -10,6 +11,7 @@ const ServiceCertifiedRcd = () => {
                     <p>Contamos con certificado de aprovechamiento de residuos RCD, proveniente de demoliciones, remodelaciones, excavaciones, productos de cortes, para su tratamiento y clasificación asegurando un aprovechamiento optimo de los mismos siendo gestores ambientales sostenibles.</p>
                 </div>
             </SectionTemplate>
+            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

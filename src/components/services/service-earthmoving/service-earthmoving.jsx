@@ -4,8 +4,9 @@ import EarthMovingIMG from '../../../assets/images/servicio-movimiento-de-tierra
 import ImageGallery1 from '../../../assets/images/servicio-movimiento-de-tierra-gallery-1.png'
 import ImageGallery2 from '../../../assets/images/servicio-movimiento-de-tierra-gallery-2.jpg'
 import ImageGallery3 from '../../../assets/images/servicio-movimiento-de-tierra-gallery-3.jpg'
-import './service-earthmoving.css'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
+import HomeServices from '../../home/home-services/home-services'
+import './service-earthmoving.css'
 
 const ServiceEarthmoving = () => {
     const images = [
@@ -24,10 +25,7 @@ const ServiceEarthmoving = () => {
                 <img src={EarthMovingIMG} alt="Movimiento de tierra" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <br />
-            <br />
-            <br />
-            <br />
+            <HomeServices text='Otros Servicios' visibleServices={['agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

@@ -5,6 +5,7 @@ import ImageGallery1 from '../../../assets/images/servicio-alquiler-de-equipos-g
 import ImageGallery2 from '../../../assets/images/servicio-alquiler-de-equipos-gellery-2.jpg'
 import ImageGallery3 from '../../../assets/images/servicio-alquiler-de-equipos-gellery-3.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
+import HomeServices from '../../home/home-services/home-services'
 import './service-yellow-machine-rental.css'
 
 const ServiceYellowMachineRental = () => {
@@ -24,10 +25,7 @@ const ServiceYellowMachineRental = () => {
                 <img src={YellowMachineRentalIMG} alt="Agregados" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <br />
-            <br />
-            <br />
-            <br />
+            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd']} />
         </>
     )
 }

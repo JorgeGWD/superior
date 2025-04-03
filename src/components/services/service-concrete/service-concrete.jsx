@@ -5,6 +5,7 @@ import ImageGallery1 from '../../../assets/images/servicio-concreto-header.jpg'
 import ImageGallery2 from '../../../assets/images/servicio-concreto-featured.jpg'
 import ImageGallery3 from '../../../assets/images/servicio-concreto-gallery.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
+import HomeServices from '../../home/home-services/home-services'
 import './service-concrete.css'
 
 const ServiceConcrete = () => {
@@ -33,10 +34,7 @@ const ServiceConcrete = () => {
                 <img src={ConcreteIMG} alt="Concretos" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <br />
-            <br />
-            <br />
-            <br />
+            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }
