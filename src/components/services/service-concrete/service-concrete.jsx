@@ -34,7 +34,7 @@ const ServiceConcrete = () => {
                 <img src={ConcreteIMG} alt="Concretos" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
+            <HomeServices className='title__section-content' text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

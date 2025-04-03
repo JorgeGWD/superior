@@ -11,7 +11,7 @@ const ServiceCertifiedRcd = () => {
                     <p>Contamos con certificado de aprovechamiento de residuos RCD, proveniente de demoliciones, remodelaciones, excavaciones, productos de cortes, para su tratamiento y clasificación asegurando un aprovechamiento optimo de los mismos siendo gestores ambientales sostenibles.</p>
                 </div>
             </SectionTemplate>
-            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'alquiler-de-maquinaria-amarilla']} />
+            <HomeServices className='title__section-content' text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

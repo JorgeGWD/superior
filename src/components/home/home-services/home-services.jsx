@@ -18,10 +18,10 @@ const services = [
     { id: 'alquiler-de-maquinaria-amarilla', img: Service6, alt: 'Alquiler de Maquinaria Amarilla' }
 ];
 
-const HomeServices = ({ visibleServices = [], text }) => {
+const HomeServices = ({ visibleServices = [], className, text }) => {
     return (
         <section className='container home-services' id='inicio-servicios'>
-            <Title className={'title__content-line'} text={text} />
+            <Title className={className} text={text} />
             <div className="home-services__content">
                 {services
                     .filter(service => visibleServices.includes(service.id))

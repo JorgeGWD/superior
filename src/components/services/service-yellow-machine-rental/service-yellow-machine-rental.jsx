@@ -25,7 +25,7 @@ const ServiceYellowMachineRental = () => {
                 <img src={YellowMachineRentalIMG} alt="Agregados" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd']} />
+            <HomeServices className='title__section-content' text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd']} />
         </>
     )
 }

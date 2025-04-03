@@ -25,7 +25,7 @@ const ServiceEarthmoving = () => {
                 <img src={EarthMovingIMG} alt="Movimiento de tierra" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <HomeServices text='Otros Servicios' visibleServices={['agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
+            <HomeServices className={'title__section-content'} text='Otros Servicios' visibleServices={['agregados', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }

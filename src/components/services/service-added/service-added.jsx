@@ -25,7 +25,7 @@ const ServiceAdded = () => {
                 <img src={AddedIMG} alt="Agregados" />
             </SectionTemplate>
             <ImageRibbon columns={3} images={images} />
-            <HomeServices text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
+            <HomeServices className='title__section-content' text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'concretos', 'excavaciones-profundas', 'certificado-rcd', 'alquiler-de-maquinaria-amarilla']} />
         </>
     )
 }
