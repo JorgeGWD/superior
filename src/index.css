@@ -4,6 +4,7 @@
     --light-color: #FFFFFF;
     --dark-color: #000000;
     --gray: #E0E0E0;
+    --light-gray: #f7f7f7;
     --dark-gray: #9E9E9E;
 
     --primary-title: clamp(2.3rem, 7vw, 3.8rem);
@@ -50,6 +51,7 @@ body {
     font-weight: 800;
     font-size: var(--text-medium);
     letter-spacing: 1px;
+    background-color: var(--light-gray);
 }
 
 a {
