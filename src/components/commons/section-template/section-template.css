@@ -21,6 +21,7 @@
         aspect-ratio: 10 / 8;
         object-fit: cover;
         border-radius: 5px;
+        box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.1);
     }
 }
 
