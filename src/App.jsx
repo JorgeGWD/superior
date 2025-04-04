@@ -1,5 +1,5 @@
-import './App.css'
 import Home from './components/home/home'
+import About from './components/about/about'
 import Navbar from './components/commons/navbar/navbar'
 import Footer from './components/commons/footer/footer'
 import Contact from './components/contact/contact'
@@ -11,6 +11,7 @@ import ServiceConcrete from './components/services/service-concrete/service-conc
 import ServiceDeepExcavation from './components/services/service-deep-excavation/service-deep-excavation'
 import ServiceCertifiedRcd from './components/services/service-certified-rcd/service-certified-rcd'
 import ServiceYellowMachineRental from './components/services/service-yellow-machine-rental/service-yellow-machine-rental'
+import './App.css'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route index path='/' element={<Home />} />
+                    <Route path='sobre-nosotros' element={<About />} />
                     <Route path='servicios/movimiento-de-tierra' element={<ServiceEarthmoving />} />
                     <Route path='servicios/agregados' element={<ServiceAdded />} />
                     <Route path='servicios/concretos' element={<ServiceConcrete />} />
