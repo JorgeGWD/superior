@@ -1,20 +1,21 @@
-import ImgFrame from '../../commons/imgframe/imgframe'
 import Title from '../../commons/title/title'
-import Project1 from '../../../assets/images/equipos.jpg'
-import Project2 from '../../../assets/images/plantas.jpg'
-import Project3 from '../../../assets/images/proyectos.jpg'
+import ProyectosIMG from '../../../assets/images/proyectos-header.jpg'
 import './home-projects.css'
+import Button from '../../commons/button/button'
+import { Link } from 'react-router'
 
 const HomeProjects = () => {
     return (
-        <section className='container home-projects' id='inicio-proyectos'>
-            <Title className={'title__content-line'} text={'Nuestros Proyectos'} />
-            <div className="home-projects__content">
-                <ImgFrame src={Project1} alt={'Equipos'} text={'Ver más'} />
-                <ImgFrame src={Project2} alt={'Plantas'} text={'Ver más'} />
-                <ImgFrame src={Project3} alt={'Proyectos'} text={'Ver más'} />
-            </div>
-        </section>
+        <di id='inicio-proyectos'>
+            <section className='container home-projects'>
+                <div className="home-projects-tex">
+                    <Title className={'title__section-content'} text={'¿Por qué GRUPO MINERO SUPERIOR?'} />
+                    <p>GRUPO MINERO SUPERIOR es una empresa 100% colombiana, dedicada a la producción y comercialización de agregados, concreto premezclado Y MOVIMIENTOS DE TIERRA, con más de 10 años de experiencia.</p>
+                    <Link to='/sobre-nosotros'><Button className={'button__secondary'} text={'Sobre Nosotros'} /></Link>
+                </div>
+                <img src={ProyectosIMG} alt="Proyectos" />
+            </section>
+        </di>
     )
 }
 
