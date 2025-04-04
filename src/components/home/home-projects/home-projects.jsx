@@ -11,7 +11,7 @@ const HomeProjects = () => {
                 <div className="home-projects-tex">
                     <Title className={'title__section-content'} text={'¿Por qué GRUPO MINERO SUPERIOR?'} />
                     <p>GRUPO MINERO SUPERIOR es una empresa 100% colombiana, dedicada a la producción y comercialización de agregados, concreto premezclado Y MOVIMIENTOS DE TIERRA, con más de 10 años de experiencia.</p>
-                    <Link to='/sobre-nosotros'><Button className={'button__secondary'} text={'Sobre Nosotros'} /></Link>
+                    <Link to={'/sobre-nosotros'}><Button className={'button__secondary'} text={'Sobre Nosotros'} /></Link>
                 </div>
                 <img src={ProyectosIMG} alt="Proyectos" />
             </section>
