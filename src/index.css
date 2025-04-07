@@ -7,14 +7,14 @@
     --light-gray: #f7f7f7;
     --dark-gray: #9E9E9E;
 
-    --primary-title: clamp(2.3rem, 7vw, 3.8rem);
+    --primary-title: clamp(2.5rem, 7vw, 3.5rem);
     --secondary-title: clamp(2rem, 5vw, 2.5rem);
     --sub-title: clamp(1.3rem, 2.1vw, 1.5rem);
 
     --text-large: clamp(1.3rem, 3vw, 1.6rem);
     --text-medium: clamp(1.1rem, 3vw, 1.3rem);
-    --text-small: clamp(0.0rem, 2.5vw, 1rem);
-    --text-xsmall: clamp(0.5rem, 2.3vw, 0.7rem);
+    --text-small: clamp(1rem, 2vw, 1rem);
+    --text-xsmall: clamp(0.8rem, 1.8vw, 0.8rem);
 
     --desktop-width: 85%;
     --tablet-width: 90%;
@@ -42,7 +42,12 @@ html {
 body {
     font-family: 'GorditaRegular', sans-serif;
     font-size: var(--text-medium);
+    font-weight: lighter;
     background-color: var(--light-gray);
+}
+
+h1, h2, h3, h4 {
+    font-weight: lighter;
 }
 
 a {
