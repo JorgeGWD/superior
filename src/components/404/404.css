@@ -2,5 +2,9 @@
     .not-found__content {
         display: flex;
         justify-content: center;
+        img {
+            max-width: 800px;
+            width: 100%;
+        }
     }
 }
