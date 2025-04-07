@@ -53,7 +53,7 @@ nav {
             }
             .navbar__content-menu-dropdown {
                 position: relative;
-                display: inline-block;
+                display: flex;
                 cursor: pointer;
                 &:hover {
                     background-color: hsl(0, 0%, 98%, .95);
@@ -69,7 +69,7 @@ nav {
                     z-index: 1;
                     display: none;
                     position: absolute;
-                    top: 37px;
+                    top: 40px;
                     left: 0px;
                     width: max-content;
                     background-color: hsl(0, 0%, 98%, .95);
@@ -142,9 +142,6 @@ nav {
             }
             .navbar__content-menu {
                 gap: 20px;
-                .navbar__content-menu-dropdown {
-                    padding: 20px 0px;
-                }
             }
         }
     }
@@ -153,7 +150,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     nav {
-        font-size: var(--text-medium);
+        font-size: var(--text-small);
         .navbar__content {
             .navbar__content-checkbtn img {
                 display: flex;
@@ -196,8 +193,12 @@ nav {
                 .navbar__content-menu-dropdown {
                     justify-content: center;
                     width: 100%;
+                    padding: 20px  0px;
                     .navbar__content-menu-dropdown-content {
                         top: 44px;
+                    }
+                    .navbar__content-menu-dropdown-item {
+                        padding: 0px;
                     }
                 }
                 button {
