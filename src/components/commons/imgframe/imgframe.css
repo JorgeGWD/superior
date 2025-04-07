@@ -16,7 +16,7 @@
         p {
             z-index: 1;
             position: absolute;
-            font-family: 'Anteb-Regular', sans-serif;
+            font-family: 'GorditaRegular', sans-serif;
             font-size: var(--secondary-title);
             font-weight: 800;
             color: var(--light-color);

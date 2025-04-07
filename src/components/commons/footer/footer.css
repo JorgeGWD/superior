@@ -4,7 +4,7 @@ footer {
     background-color: var(--primary-color);
     border-top: 50px solid var(--secondary-color);
     h3 {
-        font-family: 'Anteb-Regular', sans-serif;
+        font-family: 'GorditaBold', sans-serif;
         font-size: var(--sub-title);
     }
     .footer__content {

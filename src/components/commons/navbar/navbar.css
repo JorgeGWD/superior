@@ -12,6 +12,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
+        letter-spacing: 1px;
         animation: adjust-line 0.3s;
         animation-timeline: scroll();
         img {

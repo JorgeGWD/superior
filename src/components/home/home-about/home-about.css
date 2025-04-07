@@ -16,7 +16,6 @@
             gap: 20px;
             max-width: 800px;
             width: 100%;
-            font-size: var(--text-large);
             line-height: 35px;
             text-align: justify;
         }

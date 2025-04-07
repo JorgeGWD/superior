@@ -22,7 +22,6 @@
         align-items: baseline;
         p {
             max-width: 600px;
-            font-size: var(--text-large);
             line-height: 35px;
         }
         .home__content-bottom {
