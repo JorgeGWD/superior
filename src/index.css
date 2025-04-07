@@ -13,8 +13,8 @@
 
     --text-large: clamp(1.3rem, 3vw, 1.6rem);
     --text-medium: clamp(1.1rem, 3vw, 1.3rem);
-    --text-small: clamp(1rem, 3vw, 1.1rem);
-    --text-xsmall: clamp(0.7rem, 3vw, 0.9rem);
+    --text-small: clamp(0.0rem, 2.5vw, 1rem);
+    --text-xsmall: clamp(0.5rem, 2.3vw, 0.7rem);
 
     --desktop-width: 85%;
     --tablet-width: 90%;
@@ -22,22 +22,15 @@
 }
 
 @font-face {
-    font-family: 'Anteb-Regular';
-    src: url('./assets/fonts/Anteb-Regular.otf') format('opentype');
+    font-family: 'GorditaBold';
+    src: url('./assets/fonts/GorditaBold.otf') format('opentype');
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Anteb-SemiLight';
-    src: url('./assets/fonts/Anteb-SemiLight.otf') format('opentype');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anteb-Thin';
-    src: url('./assets/fonts/Anteb-Thin.otf') format('opentype');
+    font-family: 'GorditaRegular';
+    src: url('./assets/fonts/GorditaRegular.otf') format('opentype');
     font-weight: lighter;
     font-style: normal;
 }
@@ -47,10 +40,8 @@ html {
 }
 
 body {
-    font-family: 'Anteb-Thin', sans-serif;
-    font-weight: 800;
+    font-family: 'GorditaRegular', sans-serif;
     font-size: var(--text-medium);
-    letter-spacing: 1px;
     background-color: var(--light-gray);
 }
 
