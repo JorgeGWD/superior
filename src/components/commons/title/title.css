@@ -6,7 +6,6 @@
     .title__primary {
         z-index: 10;
         color: var(--light-color);
-        font-weight: 800;
         h1 {
             font-size: var(--primary-title);
         }
