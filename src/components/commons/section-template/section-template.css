@@ -5,6 +5,7 @@
     gap: 8vw;
     line-height: 1.5;
     .section-template__content-text {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -22,6 +23,9 @@
         object-fit: cover;
         border-radius: 5px;
         box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        text-align: justify;
     }
 }
 
