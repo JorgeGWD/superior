@@ -10,7 +10,10 @@ footer {
     .footer__content {
         display: grid;
         grid-template-columns: repeat(4, auto);
+        grid-template-areas: 
+        'logo socials locations contacts';
         .logo-superior {
+            grid-area: logo;
             display: flex;
             align-self: center;
             width: 20vw;
@@ -18,8 +21,10 @@ footer {
             height: auto;
         }
         .footer__content-socials {
+            grid-area: socials;
             display: flex;
             flex-direction: column;
+            justify-self: left;
             gap: 15px;
             svg {
                 width: 30px;
@@ -34,8 +39,10 @@ footer {
             }
         }
         .footer__content-locations {
+            grid-area: locations;
             display: flex;
             flex-direction: column;
+            justify-self: left;
             gap: 10px;
             img {
                 width: 30px;
@@ -48,9 +55,11 @@ footer {
                 line-height: 30px;
             }
         }
-        .footer__content-contac {
+        .footer__content-contacts {
+            grid-area: contacts;
             display: flex;
             flex-direction: column;
+            justify-self: left;
             gap: 10px;
             img {
                 width: 25px;
@@ -70,14 +79,24 @@ footer {
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
     footer {
         .footer__content {
-            grid-template-columns: repeat(2, auto);
-            .footer__content-socials {
-                flex-direction: column;
-                align-self: center;
-            }
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+        .footer__content {
+            grid-template-areas: 
+            'logo logo logo'
+            'locations socials socials'
+            'locations contacts contacts';
+            grid-template-columns: auto;
+            justify-items: center;
             .footer__content-item {
                 width: fit-content;
                 &:has(svg) {
@@ -91,6 +110,11 @@ footer {
 @media screen and (max-width: 768px) {
     footer {
         .footer__content {
+            grid-template-areas: 
+            'logo'
+            'socials'
+            'locations'
+            'contacts';
             grid-template-columns: repeat(1, auto);
         }
     }

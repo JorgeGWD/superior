@@ -50,18 +50,18 @@ const Footer = () => {
                         <img src={Pin} alt="Pin" />
                         <div className="footer__content-location-office">
                             <h4>Oficinas administrativas:</h4>
-                            <p>Calle 110 43-448 AV Circunvalar Barranquilla.</p>
+                            <p>Calle 110 43 - 448 AV Circunvalar Barranquilla.</p>
                         </div>
                     </div>
                     <div className="footer__content-item">
                         <img src={Pin} alt="Pin" />
                         <div className="footer__content-location-floor">
                             <h4>Plantas:</h4>
-                            <p>Kilometro 7 vía Puerto Colombia-Atlántico.</p>
+                            <p>Kilometro 7 vía Puerto Colombia - Atlántico.</p>
                         </div>
                     </div>
                 </div>
-                <div className="footer__content-contac">
+                <div className="footer__content-contacts">
                     <h3>Contactos:</h3>
                     <div className="footer__content-item">
                         <img src={Email} alt="Email" />
