@@ -6,6 +6,7 @@ import ImageGallery2 from '../../../assets/images/servicio-alquiler-de-equipos-g
 import ImageGallery3 from '../../../assets/images/servicio-alquiler-de-equipos-gellery-3.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
 import HomeServices from '../../home/home-services/home-services'
+import IsoLogo from '../../commons/iso-logo/iso-logo'
 import './service-yellow-machine-rental.css'
 
 const ServiceYellowMachineRental = () => {
@@ -19,8 +20,20 @@ const ServiceYellowMachineRental = () => {
         <>
             <SectionTemplate className='service-yellow-machine-rental' text='Alquiler de maquinaria amarilla' BackgroundIMG={BackgroundIMG}>
                 <div className="section-template__content-text service-yellow-machine-rental__content-text">
-                    <h2>Service Yellow Machine Rental</h2>
-                    <p>Welcome to the Yellow Machine Rental service page!</p>
+                    <h2>Ofrecemos maquinaria amarilla y equipos para diferentes actividades de la construcción.</h2>
+                    <p>Somos un aliado para el suministro de equipos para grandes proyectos que garantizan su confiabilidad.</p>
+                    <ul>
+                        <li>Retro Excavadoras</li>
+                        <li>Bulldozers</li>
+                        <li>Motoniveladoras</li>
+                        <li>Minicargadores</li>
+                        <li>Vibrocompatadores</li>
+                        <li>Camion cisterna</li>
+                        <li>Retrocargadores</li>
+                        <li>Piloteadoras</li>
+                        <li>Gruas</li>
+                    </ul>
+                    <IsoLogo />
                 </div>
                 <img src={YellowMachineRentalIMG} alt="Agregados" />
             </SectionTemplate>

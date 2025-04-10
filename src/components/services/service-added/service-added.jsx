@@ -6,6 +6,7 @@ import ImageGallery2 from '../../../assets/images/servicio-agregados-gallery-2.j
 import ImageGallery3 from '../../../assets/images/servicio-agregados-gallery-3.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
 import HomeServices from '../../home/home-services/home-services'
+import IsoLogo from '../../commons/iso-logo/iso-logo'
 import './service-added.css'
 
 const ServiceAdded = () => {
@@ -21,6 +22,7 @@ const ServiceAdded = () => {
                 <div className="section-template__content-text service-added__content-text">
                     <h2>Somos una compañía con más de 10 años de experiencia, altamente especializada en la PRODUCCIÓN Y COMERCIALIZACIÓN DE AGREGADOS.</h2>
                     <p>Contamos con la infraestructura técnica y el personal especializado para brindar el servicio y asesoría requerida, con el fin de generar la correcta selección de nuestros productos e implementar soluciones eficaces para sus necesidades.</p>
+                    <IsoLogo />
                 </div>
                 <img src={AddedIMG} alt="Agregados" />
             </SectionTemplate>

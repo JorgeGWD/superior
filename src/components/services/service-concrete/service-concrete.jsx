@@ -6,6 +6,7 @@ import ImageGallery2 from '../../../assets/images/servicio-concreto-featured.jpg
 import ImageGallery3 from '../../../assets/images/servicio-concreto-gallery.jpg'
 import ImageRibbon from '../../commons/image-ribbon/image-ribbon'
 import HomeServices from '../../home/home-services/home-services'
+import IsoLogo from '../../commons/iso-logo/iso-logo'
 import './service-concrete.css'
 
 const ServiceConcrete = () => {
@@ -30,6 +31,7 @@ const ServiceConcrete = () => {
                         <li>Durabilidad</li>
                         <li>Trabajabilidad</li>
                     </ul>
+                    <IsoLogo />
                 </div>
                 <img src={ConcreteIMG} alt="Concretos" />
             </SectionTemplate>
