@@ -8,7 +8,7 @@
     --dark-gray: #9E9E9E;
 
     --primary-title: clamp(2.5rem, 7vw, 3.5rem);
-    --secondary-title: clamp(2rem, 5vw, 2.5rem);
+    --secondary-title: clamp(1.8rem, 4vw, 2rem);
     --sub-title: clamp(1.3rem, 2.1vw, 1.5rem);
 
     --text-large: clamp(1.3rem, 3vw, 1.6rem);
