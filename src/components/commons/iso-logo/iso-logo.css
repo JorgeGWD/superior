@@ -1,0 +1,14 @@
+.iso-logo {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49%);
+    svg {
+        fill: var(--primary-color);
+        min-width: 300px;
+        width: 100%;
+        height: auto;
+        opacity: .15;
+    }
+}
