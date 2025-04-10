@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 1024px) {
     .section-template {
-        gap: 4vw;
+        gap: 40px;
         img {
             aspect-ratio: 4 / 5;
         }
