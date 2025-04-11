@@ -1,3 +1,4 @@
+import IsoLogo from '../../commons/iso-logo/iso-logo'
 import SectionTemplate from '../../commons/section-template/section-template'
 import HomeServices from '../../home/home-services/home-services'
 import './service-certified-rcd.css'
@@ -12,6 +13,7 @@ const ServiceCertifiedRcd = () => {
                     <p>Residuos de demoliciones, remodelaciones, cilindros de prueba, bloques, adoquines libres de plástico.</p>
                     <h2>Residuos de Excavación </h2>
                     <p>Provenientes de excavaciones de obras y limpieza de terrenos u otras actividades similares.</p>
+                    <IsoLogo />
                 </div>
             </SectionTemplate>
             <HomeServices className='title__section-content' text='Otros Servicios' visibleServices={['movimiento-de-tierra', 'agregados', 'concretos', 'excavaciones-profundas', 'alquiler-de-maquinaria-amarilla']} />
