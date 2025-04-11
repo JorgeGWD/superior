@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 
 const HomeProjects = () => {
     return (
-        <di id='inicio-proyectos'>
+        <div id='inicio-proyectos'>
             <section className='container home-projects'>
                 <div className="home-projects-tex">
                     <Title className={'title__section-content'} text={'¿Por qué GRUPO MINERO SUPERIOR?'} />
@@ -15,7 +15,7 @@ const HomeProjects = () => {
                 </div>
                 <img src={ProyectosIMG} alt="Proyectos" />
             </section>
-        </di>
+        </div>
     )
 }
 
