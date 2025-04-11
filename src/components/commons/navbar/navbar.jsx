@@ -12,7 +12,11 @@ const Navbar = () => {
     return (
         <nav>
             <div className="container navbar__content">
-                <Link to={isHomePage ? "#inicio" : "/"}><img src={LogoSuperior} alt="Logo Superior" /></Link>
+                {isHomePage ? (
+                    <a href="#inicio"><img src={LogoSuperior} alt="Logo Superior" /></a>
+                ) : (
+                    <Link to="/"><img src={LogoSuperior} alt="Logo Superior" /></Link>
+                )}
 
                 <input type="checkbox" id="check" />
                 <label htmlFor="check" className="navbar__content-checkbtn">
