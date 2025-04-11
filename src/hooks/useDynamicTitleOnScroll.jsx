@@ -1,14 +1,13 @@
-// src/hooks/useDynamicTitleOnScroll.js
 import { useEffect } from 'react'
 
 const BRAND_NAME = 'Superior'
 
 const sectionsConfig = [
     { id: 'inicio', title: `${BRAND_NAME} | Inicio` },
-    { id: 'inicio-servicios', title: `${BRAND_NAME} | Inicio Servicios` },
-    { id: 'inicio-sobre-nosotros', title: `${BRAND_NAME} | Inicio Sobre Nosotros` },
-    { id: 'inicio-proyectos', title: `${BRAND_NAME} | Inicio Proyectos` },
-    { id: 'inicio-nuestras-plantas', title: `${BRAND_NAME} | Inicio Nuestras Plantas` },
+    { id: 'inicio-servicios', title: `${BRAND_NAME} | Servicios` },
+    { id: 'inicio-sobre-nosotros', title: `${BRAND_NAME} | Sobre Nosotros` },
+    { id: 'inicio-proyectos', title: `${BRAND_NAME} | Proyectos` },
+    { id: 'inicio-nuestras-plantas', title: `${BRAND_NAME} | Nuestras Plantas` },
 ]
 
 const useDynamicTitleOnScroll = () => {
@@ -25,6 +24,10 @@ const useDynamicTitleOnScroll = () => {
                     const section = sectionsConfig.find(s => s.id === entry.target.id)
                     if (section) {
                         document.title = section.title
+
+                        if (window.location.hash !== `#${section.id}`) {
+                            history.replaceState(null, '', `#${section.id}`)
+                        }
                     }
                 }
             }
