@@ -9,6 +9,36 @@ const Footer = () => {
         <footer>
             <div className="container footer__content">
                 <img src={LogoSuperior} alt="Logo Superior" className='logo-superior' />
+                <div className="footer__content-locations">
+                    <h3>Localización:</h3>
+                    <div className="footer__content-locations-text">
+                        <div className="footer__content-item">
+                            <img src={Pin} alt="Pin" />
+                            <div className="footer__content-location-office">
+                                <h4>Oficinas administrativas:</h4>
+                                <p>Calle 110 43 - 448 AV Circunvalar Barranquilla.</p>
+                            </div>
+                        </div>
+                        <div className="footer__content-item">
+                            <img src={Pin} alt="Pin" />
+                            <div className="footer__content-location-floor">
+                                <h4>Plantas:</h4>
+                                <p>Kilometro 7 vía Puerto Colombia - Atlántico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer__content-contacts">
+                    <h3>Contactos:</h3>
+                    <div className="footer__content-item">
+                        <img src={Email} alt="Email" />
+                        <a href="mailto:info@grupominerosuperior.com">info@grupominerosuperior.com</a>
+                    </div>
+                    <div className="footer__content-item">
+                        <img src={Phone} alt="Phone" />
+                        <a href="https://wa.me/573159272862" target="_blank">(+57) 315 927 28 62</a>
+                    </div>
+                </div>
                 <div className="footer__content-socials">
                     <h3>Siguenos:</h3>
                     <div className="footer__content-item">
@@ -42,34 +72,6 @@ const Footer = () => {
                         </g>
                         </svg>
                     </a>
-                    </div>
-                </div>
-                <div className="footer__content-locations">
-                    <h3>Localización:</h3>
-                    <div className="footer__content-item">
-                        <img src={Pin} alt="Pin" />
-                        <div className="footer__content-location-office">
-                            <h4>Oficinas administrativas:</h4>
-                            <p>Calle 110 43 - 448 AV Circunvalar Barranquilla.</p>
-                        </div>
-                    </div>
-                    <div className="footer__content-item">
-                        <img src={Pin} alt="Pin" />
-                        <div className="footer__content-location-floor">
-                            <h4>Plantas:</h4>
-                            <p>Kilometro 7 vía Puerto Colombia - Atlántico.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="footer__content-contacts">
-                    <h3>Contactos:</h3>
-                    <div className="footer__content-item">
-                        <img src={Email} alt="Email" />
-                        <a href="mailto:info@grupominerosuperior.com">info@grupominerosuperior.com</a>
-                    </div>
-                    <div className="footer__content-item">
-                        <img src={Phone} alt="Phone" />
-                        <a href="https://wa.me/573159272862" target="_blank">(+57) 315 927 28 62</a>
                     </div>
                 </div>
             </div>

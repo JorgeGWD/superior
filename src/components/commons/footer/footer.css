@@ -11,7 +11,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-areas: 
-        'logo socials locations contacts';
+        'logo locations contacts socials';
         .logo-superior {
             grid-area: logo;
             display: flex;
@@ -44,6 +44,11 @@ footer {
             flex-direction: column;
             justify-self: left;
             gap: 10px;
+            .footer__content-locations-text {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
             img {
                 width: 30px;
                 height: auto;
@@ -93,10 +98,15 @@ footer {
         .footer__content {
             grid-template-areas: 
             'logo logo logo'
-            'locations socials socials'
-            'locations contacts contacts';
+            'locations contacts contacts'
+            'locations socials socials';
             grid-template-columns: auto;
             justify-items: center;
+            .footer__content-locations {
+                .footer__content-locations-text {
+                    gap: 40px;
+                }
+            }
             .footer__content-item {
                 width: fit-content;
                 &:has(svg) {
@@ -112,10 +122,15 @@ footer {
         .footer__content {
             grid-template-areas: 
             'logo'
-            'socials'
             'locations'
-            'contacts';
+            'contacts'
+            'socials';
             grid-template-columns: repeat(1, auto);
+            .footer__content-locations {
+                .footer__content-locations-text {
+                    gap: 12px;
+                }
+            }
         }
     }
 }
