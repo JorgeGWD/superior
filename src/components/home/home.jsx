@@ -3,8 +3,11 @@ import HomeServices from './home-services/home-services'
 import HomeAbout from './home-about/home-about'
 import HomeProjects from './home-projects/home-projects'
 import Slider from '../slider/slider'
+import useDynamicTitleOnScroll from '../../hooks/useDynamicTitleOnScroll'
 
 const Home = () => {
+    useDynamicTitleOnScroll()
+    
     return (
         <>
             <TopHome />
