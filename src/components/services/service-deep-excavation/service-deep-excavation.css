@@ -1,4 +1,6 @@
 .service-deep-excavation {
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    .service-deep-excavation__header {
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+    }
 }
