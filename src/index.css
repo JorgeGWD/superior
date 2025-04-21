@@ -76,6 +76,8 @@ ul {
 }
 
 button {
+    z-index: 10;
+    position: relative;
     display: inline-block;
     align-self: baseline;
     font-family: 'Anteb-Regular', sans-serif;
