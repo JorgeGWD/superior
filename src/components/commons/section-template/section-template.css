@@ -29,6 +29,12 @@
     }
 }
 
+.section-template__header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media screen and (max-width: 1024px) {
     .section-template {
         gap: 40px;
