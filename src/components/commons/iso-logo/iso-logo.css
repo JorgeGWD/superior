@@ -6,7 +6,7 @@
     transform: translate(-50%, -49%);
     svg {
         fill: var(--dark-gray);
-        min-width: 300px;
+        min-width: 400px;
         width: 100%;
         height: auto;
         opacity: .15;
