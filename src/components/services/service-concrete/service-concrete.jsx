@@ -18,7 +18,7 @@ const ServiceConcrete = () => {
 
     return (
         <>
-            <SectionTemplate className='service-concrete' text='Concretos' BackgroundIMG={BackgroundIMG} >
+            <SectionTemplate className='service-concrete' text='Concretos' BackgroundIMG={BackgroundIMG} showButton={true}>
                 <div className="section-template__content-text service-concrete__content-tex">
                     <h2>En GRUPO MINERO SUPERIOR producimos concretos de la más alta calidad.</h2>
                     <p>Contamos con personal técnico y especializado para poder ofrecer un producto que cumpla con las características idóneas como son:

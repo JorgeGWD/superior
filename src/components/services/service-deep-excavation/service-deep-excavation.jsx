@@ -18,7 +18,7 @@ const ServiceDeepExcavation = () => {
         
     return (
         <>
-            <SectionTemplate className='service-deep-excavation' text='Excavaciones profundas' BackgroundIMG={BackgroundIMG} >
+            <SectionTemplate className='service-deep-excavation' text='Excavaciones profundas' BackgroundIMG={BackgroundIMG} showButton={true}>
                 <div className="section-template__content-text">
                     <h2>Realizamos excavaciones profundas para obras que requieren una intervención en niveles inferiores del terreno, como sótanos, estructuras subterráneas, cimentaciones especiales o sistemas de contención.</h2>
                     <p>Contamos con maquinaria pesada, personal capacitado y experiencia en la ejecución de cortes, estabilización de taludes, control de agua subterránea y manejo de materiales excavados. Evaluamos previamente las condiciones del terreno para definir el mejor método constructivo, garantizando estabilidad y continuidad operativa.</p>

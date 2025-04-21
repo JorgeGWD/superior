@@ -6,7 +6,7 @@ import './service-certified-rcd.css'
 const ServiceCertifiedRcd = () => {
     return (
         <>
-            <SectionTemplate className='service-certified-rcd' text='Certificado RCD' >
+            <SectionTemplate className='service-certified-rcd' text='Certificado RCD' showButton={true}>
                 <div className="section-template__content-text">
                     <h2>Contamos con certificado de aprovechamiento de residuos RCD para su tratamiento y clasificación asegurando un aprovechamiento óptimo de los mismos siendo gestores ambientales sostenibles.</h2>
                     <h2>RCD (Residuos de Concretos)</h2>

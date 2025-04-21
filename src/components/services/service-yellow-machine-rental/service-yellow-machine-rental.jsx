@@ -18,7 +18,7 @@ const ServiceYellowMachineRental = () => {
 
     return (
         <>
-            <SectionTemplate className='service-yellow-machine-rental' text='Alquiler de maquinaria amarilla' BackgroundIMG={BackgroundIMG}>
+            <SectionTemplate className='service-yellow-machine-rental' text='Alquiler de maquinaria amarilla' BackgroundIMG={BackgroundIMG} showButton={true}>
                 <div className="section-template__content-text service-yellow-machine-rental__content-text">
                     <h2>Ofrecemos maquinaria amarilla y equipos para diferentes actividades de la construcción.</h2>
                     <p>Somos un aliado para el suministro de equipos para grandes proyectos que garantizan su confiabilidad.</p>

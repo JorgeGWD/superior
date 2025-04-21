@@ -18,7 +18,7 @@ const ServiceAdded = () => {
 
     return (
         <>
-            <SectionTemplate className='service-added' text='Agregados' BackgroundIMG={BackgroundIMG}>
+            <SectionTemplate className='service-added' text='Agregados' BackgroundIMG={BackgroundIMG} showButton={true}>
                 <div className="section-template__content-text service-added__content-text">
                     <h2>Somos una compañía con más de 10 años de experiencia, altamente especializada en la PRODUCCIÓN Y COMERCIALIZACIÓN DE AGREGADOS.</h2>
                     <p>Contamos con la infraestructura técnica y el personal especializado para brindar el servicio y asesoría requerida, con el fin de generar la correcta selección de nuestros productos e implementar soluciones eficaces para sus necesidades.</p>
