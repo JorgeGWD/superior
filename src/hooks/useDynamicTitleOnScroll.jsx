@@ -12,6 +12,10 @@ const sectionsConfig = [
 
 const useDynamicTitleOnScroll = () => {
     useEffect(() => {
+        if (window.location.hash === '#inicio') {
+            history.replaceState(null, '', window.location.pathname + window.location.search)
+        }
+
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -25,8 +29,14 @@ const useDynamicTitleOnScroll = () => {
                     if (section) {
                         document.title = section.title
 
-                        if (window.location.hash !== `#${section.id}`) {
-                            history.replaceState(null, '', `#${section.id}`)
+                        if (section.id === 'inicio') {
+                            if (window.location.hash) {
+                                history.replaceState(null, '', window.location.pathname + window.location.search)
+                            }
+                        } else {
+                            if (window.location.hash !== `#${section.id}`) {
+                                history.replaceState(null, '', `#${section.id}`)
+                            }
                         }
                     }
                 }
