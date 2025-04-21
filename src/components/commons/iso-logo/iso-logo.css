@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -49%);
     svg {
-        fill: var(--primary-color);
+        fill: var(--dark-gray);
         min-width: 300px;
         width: 100%;
         height: auto;
