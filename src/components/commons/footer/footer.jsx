@@ -36,7 +36,10 @@ const Footer = () => {
                     </div>
                     <div className="footer__content-item">
                         <img src={Phone} alt="Phone" />
-                        <a href="https://wa.me/573159272862" target="_blank">(+57) 315 927 28 62</a>
+                        <div className="footer__content-item-phone-numbers">
+                            <a href="https://wa.me/573159272862" target="_blank">(+57) 315 927 28 62</a>
+                            <a href="https://wa.me/573106873017" target="_blank">(+57) 310 687 30 17</a>
+                        </div>
                     </div>
                 </div>
                 <div className="footer__content-socials">
