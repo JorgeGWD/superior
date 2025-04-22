@@ -107,6 +107,7 @@ footer {
             'locations socials socials';
             grid-template-columns: auto;
             justify-items: center;
+            gap: 40px 80px;
             .footer__content-locations {
                 .footer__content-locations-text {
                     gap: 40px;
