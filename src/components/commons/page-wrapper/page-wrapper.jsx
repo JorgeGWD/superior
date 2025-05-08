@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Navbar from '../navbar/navbar'
 import Footer from '../footer/footer'
 import Home from '../../home/home'
@@ -16,6 +17,12 @@ import usePageTitle from '../../../hooks/usePageTilte'
 function PageWrapper() {
 
     usePageTitle()
+
+    const location = useLocation()
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }, [location.pathname]);
 
     return (
         <>
