@@ -12,6 +12,7 @@ footer {
         grid-template-columns: repeat(4, auto);
         grid-template-areas: 
         'logo locations contacts socials';
+        font-size: var(--text-small);
         .logo-superior {
             grid-area: logo;
             display: flex;
@@ -111,6 +112,7 @@ footer {
             .footer__content-locations {
                 .footer__content-locations-text {
                     gap: 40px;
+                    width: 80%;
                 }
             }
             .footer__content-item {
@@ -135,6 +137,7 @@ footer {
             .footer__content-locations {
                 .footer__content-locations-text {
                     gap: 12px;
+                    width: 100%;
                 }
             }
         }
