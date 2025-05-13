@@ -9,39 +9,45 @@ const Contact = () => {
     const [status, setStatus] = useState(null)
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        setStatus(null)
+        e.preventDefault();
+        setStatus(null);
 
-        const form = formRef.current
-        if (!form) return
+        const form = formRef.current;
+        if (!form) return;
 
-        const name = form.name.value.trim()
-        const email = form.email.value.trim()
-        const message = form.message.value.trim()
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
 
         if (!name || !email || !message) {
-            setStatus('Por favor completa todos los campos.')
-            return
+            setStatus('Por favor completa todos los campos.');
+            return;
         }
 
+        // Detectar entorno (desarrollo o producción)
+        const API_URL =
+            import.meta.env.DEV
+                ? 'http://localhost:3001/send' // Puerto del backend local
+                : 'https://grupominerosuperior.com/backend/send'; // Producción
+
         try {
-            const res = await fetch('/send', {
+            const res = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message }),
-            })
+            });
 
-            const data = await res.json()
+            const data = await res.json();
 
             if (res.ok) {
-                setStatus('Mensaje enviado correctamente.')
-                form.reset()
+                setStatus('Mensaje enviado correctamente.');
+                form.reset();
             } else {
-                setStatus(data.message || 'Hubo un error al enviar el mensaje.')
+                setStatus(data.message || 'Hubo un error al enviar el mensaje.');
             }
         } catch (err) {
-            console.error('Error al enviar:', err)
-            setStatus('Error de red al enviar el mensaje.')
+            console.error('Error al enviar:', err);
+            setStatus('Error de red al enviar el mensaje.');
         }
     }
 
