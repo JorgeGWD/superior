@@ -13,6 +13,7 @@ import ServiceDeepExcavation from '../../services/service-deep-excavation/servic
 import ServiceCertifiedRcd from '../../services/service-certified-rcd/service-certified-rcd'
 import ServiceYellowMachineRental from '../../services/service-yellow-machine-rental/service-yellow-machine-rental'
 import usePageTitle from '../../../hooks/usePageTilte'
+import SEO from '../../../hooks/SEO'
 
 function PageWrapper() {
 
@@ -26,6 +27,7 @@ function PageWrapper() {
 
     return (
         <>
+            <SEO />
             <Navbar />
             <Routes>
                 <Route index path='/' element={<Home />} />
