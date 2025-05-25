@@ -87,6 +87,7 @@ function SEO() {
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="google-site-verification" content="3JE5I927qJhjP8iYWfjL5FvsilvuRMARJoKLKmEP-NA" />
     </Helmet>
   )
 }
