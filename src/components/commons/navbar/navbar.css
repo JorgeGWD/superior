@@ -54,6 +54,7 @@ nav {
             .navbar__content-menu-dropdown {
                 position: relative;
                 display: flex;
+                border-radius: 5px;
                 cursor: pointer;
                 &:hover {
                     background-color: hsl(0, 0%, 98%, .95);
@@ -66,17 +67,21 @@ nav {
                     }
                 }
                 .navbar__content-menu-dropdown-content {
-                    z-index: 1;
-                    display: none;
+                    z-index: 100;
+                    opacity: 0;
+                    visibility: hidden;
                     position: absolute;
-                    top: 40px;
+                    top: 20px;
                     left: 0px;
                     width: max-content;
+                    border-radius: 5px;
                     background-color: hsl(0, 0%, 98%, .95);
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    overflow: hidden;
                     a {
                         justify-content: start;
                         padding: 20px;
+                        border-radius: 0px;
                         &:hover {
                             display: flex;
                             flex-direction: column;
@@ -91,8 +96,11 @@ nav {
                     padding: 10px;
                 }
                 &:hover .navbar__content-menu-dropdown-content {
-                    display: flex;
                     flex-direction: column;
+                    top: 40px;
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.3s;
                 }
                 svg {
                     width: 10px;
@@ -195,7 +203,7 @@ nav {
                     width: 100%;
                     padding: 20px  0px;
                     .navbar__content-menu-dropdown-content {
-                        top: 44px;
+                        top: 65px;
                     }
                     .navbar__content-menu-dropdown-item {
                         padding: 0px;
