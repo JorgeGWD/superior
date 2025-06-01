@@ -47,7 +47,7 @@ nav {
                         background-color: transparent;
                     }
                 }
-                &:first-child, &:last-child {
+                &:last-child {
                     padding: 0px;
                 }
             }
@@ -92,8 +92,16 @@ nav {
                 }
                 .navbar__content-menu-dropdown-item {
                     display: flex;
-                    gap: 10px;
-                    padding: 10px;
+                    gap: 5px;
+                    padding-right: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: hsl(0, 0%, 98%, .95);
+                        a {
+                            color: var(--primary-color);
+                        }
+                    }
                 }
                 &:hover .navbar__content-menu-dropdown-content {
                     flex-direction: column;
