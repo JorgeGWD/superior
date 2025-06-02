@@ -51,7 +51,19 @@ const Slider = () => {
             </div>
             <span className='slider__buttons'>
                 {images.map((_, idx) => {
-                    return <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "slider__button" : "slider__button slider__button-inactive"}></button>
+                   const isSelected = slide === idx;
+                    return (
+                        <button
+                            key={idx}
+                            onClick={() => setSlide(idx)}
+                            className={isSelected ? "slider__button" : "slider__button slider__button-inactive"}
+                            aria-selected={isSelected}
+                            role="tab"
+                            tabIndex={isSelected ? 0 : -1}
+                            type="button"
+                            aria-label={`Ir a planta ${idx + 1}`}
+                        />
+                    )
                 })}
             </span>
         </div>
