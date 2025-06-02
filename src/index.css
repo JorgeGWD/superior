@@ -54,6 +54,7 @@ a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    width: fit-content;
     &:has(svg) {
         line-height: 0px;
     }
