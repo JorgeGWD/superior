@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { useLocation, Link } from 'react-router-dom'
+import { useLocation, Link, useNavigate } from 'react-router-dom'
 import LogoSuperior from '../../../assets/images/logo-superior.svg'
 import IconMenu from '../../../assets/images/icon-menu.svg'
 import IconClose from '../../../assets/images/icon-close.svg'
@@ -7,15 +7,16 @@ import Button from '../button/button'
 import './navbar.css'
 
 const Navbar = () => {
-    const location = useLocation();
-    const isHomePage = location.pathname === '/';
-    const checkboxRef = useRef(null);
+    const location = useLocation()
+    const isHomePage = location.pathname === '/'
+    const checkboxRef = useRef(null)
+    const navigate = useNavigate()
 
     const closeMenu = () => {
         if (checkboxRef.current) {
-            checkboxRef.current.checked = false;
+            checkboxRef.current.checked = false
         }
-    };
+    }
 
     return (
         <nav>
@@ -67,13 +68,11 @@ const Navbar = () => {
                         <Link to="/sobre-nosotros" onClick={closeMenu}>Sobre Nosotros</Link>
                     )}
 
-                    <Link to="/contacto" onClick={closeMenu}>
-                        <Button className={'button__primary'} text={'Contacto'} />
-                    </Link>
+                    <Button className={'button__primary'} onClick={() => {navigate("/contacto"); closeMenu()}} text={'Contacto'} />
                 </div>
             </div>
         </nav>
-    );
+    )
 }
 
-export default Navbar;
+export default Navbar

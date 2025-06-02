@@ -6,7 +6,7 @@ import Service3 from '../../../assets/images/servicio-concreto-header.jpg'
 import Service4 from '../../../assets/images/excavaciones-profundas.jpg'
 import Service5 from '../../../assets/images/certificado-rcd.jpg'
 import Service6 from '../../../assets/images/servicio-alquiler-de-equipos-header.jpg'
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import './home-services.css';
 
 const services = [

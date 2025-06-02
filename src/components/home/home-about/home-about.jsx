@@ -1,10 +1,12 @@
 import Button from '../../commons/button/button'
 import Title from '../../commons/title/title'
 import BackgroungIMG from '../../../assets/images/planta-de-trituracion.jpg'
-import { Link } from 'react-router'
+import { useNavigate  } from 'react-router-dom'
 import './home-about.css'
 
 const HomeAbout = () => {
+    const navigate = useNavigate()
+
     return (
         <section className='home-about' id='inicio-sobre-nosotros' style={{ backgroundImage: `url(${BackgroungIMG})` }}>
             <div className="container home-about__content">
@@ -14,7 +16,7 @@ const HomeAbout = () => {
                     <p>Nuestro objetivo es satisfacer las necesidades de nuestros clientes convirtiéndonos en un aliado estratégico en la primera fase de los proyectos en mejoramiento de suelos, extensión y compactación de material granular, alquiler de equipos y el desarrollo de grandes plataformas.</p>
                     <p>Contamos con plantas industriales para la producción de gravas, arenas finas y concreto contribuyendo al desarrollo de la región y generando valor para los accionistas y colaboradores.</p>
                 </div>
-                <Link to={'/contacto'}><Button className={'button__secondary'} text={'Pide una cotización'} /></Link>
+                <Button className={'button__secondary'} onClick={() => navigate("/contacto")} text={'Pide una cotización'} />
             </div>
         </section>
     )
